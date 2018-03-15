@@ -1083,6 +1083,23 @@ pre .javascript .function {
 .comments {
   margin: 60px 20px 0;
 }
+.archive .posts-collapse .post {
+  padding: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.archive .posts-collapse .collection-title {
+  margin: 30px 0;
+}
+.archive .posts-collapse .post-header:hover {
+  border-bottom-color: #4285f4;
+}
+.archive .posts-collapse .post-header:hover * {
+  color: #4285f4 !important;
+}
+.archive .posts-collapse .post-header:hover::before {
+  background: #4285f4;
+}
 .tag-cloud {
   text-align: center;
 }
@@ -1856,7 +1873,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #98c7d7;
+  background: #e3856f;
 }
 .links-of-blogroll {
   font-size: 13px;
