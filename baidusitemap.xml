@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+    
+  <url>
+    <loc>http://codehtml.cn/2017/08/24/javascript-bl/</loc>
+    <lastmod>2018-03-15T00:50:59.592Z</lastmod>
+    <data>
+        <display>
+        <title>javascript两个变量互换值，你了解多少</title>
+        <pubTime>2017-08-24T09:34:50.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/08/23/sasssum/</loc>
+    <lastmod>2018-03-15T00:50:48.776Z</lastmod>
+    <data>
+        <display>
+        <title>Sass使用例子总结</title>
+        <pubTime>2017-08-23T15:16:43.000Z</pubTime>
+        
+        <tag>sass</tag>
+         
+         
+           
+             
+              <breadCrumb title="sass" url="http://codehtml.cn/categories/sass/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/08/23/jsarray/</loc>
+    <lastmod>2018-03-15T00:50:39.104Z</lastmod>
+    <data>
+        <display>
+        <title>javascript之Array的使用</title>
+        <pubTime>2017-08-23T15:20:26.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/08/29/webzyyh/</loc>
+    <lastmod>2018-03-15T00:50:12.536Z</lastmod>
+    <data>
+        <display>
+        <title>web前端资源文件的部署和优化</title>
+        <pubTime>2017-08-29T12:18:40.000Z</pubTime>
+        
+        <tag>web架构</tag>
+         
+        <tag>前端优化</tag>
+         
+         
+           
+             
+              <breadCrumb title="web架构" url="http://codehtml.cn/categories/web%E6%9E%B6%E6%9E%84/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/08/31/webyhimg/</loc>
+    <lastmod>2018-03-15T00:50:02.767Z</lastmod>
+    <data>
+        <display>
+        <title>web前端优化之图片优化</title>
+        <pubTime>2017-08-31T12:40:42.000Z</pubTime>
+        
+        <tag>web架构</tag>
+         
+        <tag>前端优化</tag>
+         
+         
+           
+             
+              <breadCrumb title="web架构" url="http://codehtml.cn/categories/web%E6%9E%B6%E6%9E%84/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/08/23/siweidaotujs/</loc>
+    <lastmod>2018-03-15T00:49:56.384Z</lastmod>
+    <data>
+        <display>
+        <title>干货，大神的javascript思维导图，赶紧收藏吧！！</title>
+        <pubTime>2017-08-23T15:10:42.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/16/es6/es6-4/</loc>
+    <lastmod>2018-03-15T00:49:14.536Z</lastmod>
+    <data>
+        <display>
+        <title>《ES6标准入门》读记之数组的扩展</title>
+        <pubTime>2017-09-16T15:46:58.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="ES6" url="http://codehtml.cn/categories/ES6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/16/es6/es6-3/</loc>
+    <lastmod>2018-03-15T00:49:09.151Z</lastmod>
+    <data>
+        <display>
+        <title>《ES6标准入门》读记之字符串的扩展</title>
+        <pubTime>2017-09-16T15:46:47.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="ES6" url="http://codehtml.cn/categories/ES6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/12/es6/es6-2/</loc>
+    <lastmod>2018-03-15T00:49:03.656Z</lastmod>
+    <data>
+        <display>
+        <title>《ES6标准入门》读记之变量的解构赋值</title>
+        <pubTime>2017-09-12T13:46:02.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="ES6" url="http://codehtml.cn/categories/ES6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/12/es6/es6-1/</loc>
+    <lastmod>2018-03-15T00:48:57.887Z</lastmod>
+    <data>
+        <display>
+        <title>《ES6标准入门》读记之常用变量</title>
+        <pubTime>2017-09-12T13:42:23.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="ES6" url="http://codehtml.cn/categories/ES6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/03/12/css/css-xzq/</loc>
+    <lastmod>2018-03-14T15:05:49.629Z</lastmod>
+    <data>
+        <display>
+        <title>CSS之选择器</title>
+        <pubTime>2017-03-12T15:17:29.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>CSS3</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://codehtml.cn/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2018/03/07/css/css3-box-shadow/</loc>
+    <lastmod>2018-03-14T15:05:39.989Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3之box-shadow</title>
+        <pubTime>2018-03-07T09:37:48.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>CSS3</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS3" url="http://codehtml.cn/categories/CSS3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+    
+    
+  <url>
+    <loc>http://codehtml.cn/2018/01/22/html/html-dialog/</loc>
+    <lastmod>2018-03-13T12:42:18.678Z</lastmod>
+    <data>
+        <display>
+        <title>HTML5新标签dialog</title>
+        <pubTime>2018-01-22T06:00:00.000Z</pubTime>
+        
+        <tag>Html</tag>
+         
+        <tag>Html5</tag>
+         
+         
+           
+             
+              <breadCrumb title="Html" url="http://codehtml.cn/categories/Html/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2018/03/13/es6/es-5/</loc>
+    <lastmod>2018-03-13T12:22:40.444Z</lastmod>
+    <data>
+        <display>
+        <title>ES6之Set、WeakSet、Map、WeakMap数据结构</title>
+        <pubTime>2018-03-13T08:39:00.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="ES6" url="http://codehtml.cn/categories/ES6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2018/02/04/js/js-proto5/</loc>
+    <lastmod>2018-02-04T22:35:29.906Z</lastmod>
+    <data>
+        <display>
+        <title>javascript继承之寄生式继承（五）</title>
+        <pubTime>2018-02-04T13:42:38.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>继承</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2018/02/04/js/js-proto6/</loc>
+    <lastmod>2018-02-04T22:35:07.203Z</lastmod>
+    <data>
+        <display>
+        <title>javascript继承之寄生组合式继承（六）</title>
+        <pubTime>2018-02-04T13:42:59.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>继承</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2018/02/04/js/js-proto3/</loc>
+    <lastmod>2018-02-04T22:34:46.235Z</lastmod>
+    <data>
+        <display>
+        <title>javascript继承之组合继承（三）</title>
+        <pubTime>2018-02-04T13:42:25.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>继承</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2018/02/04/js/js-proto4/</loc>
+    <lastmod>2018-02-04T13:46:19.629Z</lastmod>
+    <data>
+        <display>
+        <title>javascript继承之原型式继承（四）</title>
+        <pubTime>2018-02-04T13:42:30.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>继承</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2018/02/04/js/js-proto2/</loc>
+    <lastmod>2018-02-04T11:08:46.099Z</lastmod>
+    <data>
+        <display>
+        <title>javascript继承之构造函数继承（二）</title>
+        <pubTime>2018-02-04T11:06:24.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>继承</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2018/02/04/js/js-proto1/</loc>
+    <lastmod>2018-02-04T11:08:23.614Z</lastmod>
+    <data>
+        <display>
+        <title>javascript继承之原型链继承（一）</title>
+        <pubTime>2018-02-04T02:17:24.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>继承</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/21/jsh/jsh2/</loc>
+    <lastmod>2018-02-04T09:02:13.443Z</lastmod>
+    <data>
+        <display>
+        <title>红皮书读记-变量、作用域和内存问题</title>
+        <pubTime>2017-09-21T09:47:06.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>javascript高级设计程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-6/</loc>
+    <lastmod>2018-02-04T09:02:13.442Z</lastmod>
+    <data>
+        <display>
+        <title>红皮书读记-基本函数</title>
+        <pubTime>2017-09-20T15:22:49.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>javascript高级设计程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-2/</loc>
+    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
+    <data>
+        <display>
+        <title>红皮书读记-基本概念</title>
+        <pubTime>2017-09-20T15:22:13.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>javascript高级设计程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
+    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
+    <data>
+        <display>
+        <title>红皮书读记-语句</title>
+        <pubTime>2017-09-20T15:22:46.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>javascript高级设计程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-4/</loc>
+    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
+    <data>
+        <display>
+        <title>红皮书读记-操作符</title>
+        <pubTime>2017-09-20T15:22:24.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>javascript高级设计程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-3/</loc>
+    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
+    <data>
+        <display>
+        <title>红皮书读记-基本数据类型</title>
+        <pubTime>2017-09-20T15:22:20.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>javascript高级设计程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-1/</loc>
+    <lastmod>2018-02-04T09:02:13.440Z</lastmod>
+    <data>
+        <display>
+        <title>红皮书读记-严格模式</title>
+        <pubTime>2017-09-20T15:12:05.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>javascript高级设计程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2018/01/19/js/iife/</loc>
+    <lastmod>2018-02-04T09:02:13.430Z</lastmod>
+    <data>
+        <display>
+        <title>javascript立即执行函数</title>
+        <pubTime>2018-01-19T07:54:57.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/12/14/canvas/canvas-demo1/</loc>
+    <lastmod>2018-02-04T09:02:13.428Z</lastmod>
+    <data>
+        <display>
+        <title>Canvas绘制三角形和圆形</title>
+        <pubTime>2017-12-14T07:45:36.000Z</pubTime>
+        
+        <tag>canvas</tag>
+         
+         
+           
+             
+              <breadCrumb title="canvas" url="http://codehtml.cn/categories/canvas/"/>
+          
+        </display>
+    </data>
+    </url>
+
+</urlset>

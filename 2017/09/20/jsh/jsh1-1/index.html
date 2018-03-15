@@ -1,0 +1,1403 @@
+<!DOCTYPE html>    
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/apple-touch.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/apple-touch.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/apple-touch.png?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="javascript,javascript高级设计程序," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="《javascript高级程序设计》读记之严格模式">
+<meta name="keywords" content="javascript,javascript高级设计程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="红皮书读记-严格模式">
+<meta property="og:url" content="http://codehtml.cn/2017/09/20/jsh/jsh1-1/index.html">
+<meta property="og:site_name" content="CODEHTML">
+<meta property="og:description" content="《javascript高级程序设计》读记之严格模式">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://codehtml.cn/images/codehtml.jpg">
+<meta property="og:updated_time" content="2018-02-04T09:02:13.440Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="红皮书读记-严格模式">
+<meta name="twitter:description" content="《javascript高级程序设计》读记之严格模式">
+<meta name="twitter:image" content="http://codehtml.cn/images/codehtml.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+
+</script>
+
+
+
+  <link rel="canonical" href="http://codehtml.cn/2017/09/20/jsh/jsh1-1/"/>
+
+
+
+
+
+  <title>红皮书读记-严格模式 | CODEHTML</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?998a2fde42a66376f491df7d73031c4a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+     
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/nieyafei" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+    <style>
+      .github-corner:hover .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+      }
+
+      @keyframes octocat-wave {
+        0%,
+        100% {
+          transform: rotate(0)
+        }
+        20%,
+        60% {
+          transform: rotate(-25deg)
+        }
+        40%,
+        80% {
+          transform: rotate(10deg)
+        }
+      }
+
+      @media (max-width:500px) {
+        .github-corner:hover .octo-arm {
+          animation: none
+        }
+        .github-corner .octo-arm {
+          animation: octocat-wave 560ms ease-in-out
+        }
+      }
+    </style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">CODEHTML</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">前端蜗牛</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-link"></i> <br />
+            
+            友链
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            书单
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-git"></i> <br />
+            
+            项目
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://codehtml.cn/2017/09/20/jsh/jsh1-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nieyafei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CODEHTML">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">红皮书读记-严格模式</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-20T23:12:05+08:00">
+                2017-09-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript高级设计程序/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript高级设计程序</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读次数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">
+                  《javascript高级程序设计》读记之严格模式
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://codehtml.cn/images/codehtml.jpg" alt="codehtml.jpg"></p>
+<h1 id="严格模式-use-strict"><a href="#严格模式-use-strict" class="headerlink" title="严格模式(use strict)"></a>严格模式(use strict)</h1><blockquote>
+<p>“use strict”; // 即在严格的条件下运行。</p>
+</blockquote>
+<p><code>严格模式</code>是在<code>ECMAScript5</code>新增的，<strong>严格模式下你不能使用未声明的变量</strong>，体现了Javascript更合理、更安全、更严谨的发展方向。</p>
+<p><code>严格模式</code>是为js定义了一种不同的解析和执行模型，在此模式下，对于<code>ECMAScript3</code>种的一些不确定行为将会处理，对于不安全的操作也会抛出错误的。一般都是在js的顶部添加此模式代码。</p>
+<blockquote>
+<p>非严格的模式，也会被称为“马虎模式/稀松模式/懒散模式”</p>
+</blockquote>
+<h2 id="严格模式的好处"><a href="#严格模式的好处" class="headerlink" title="严格模式的好处"></a>严格模式的好处</h2><blockquote>
+<p>1、消除Javascript语法的一些不合理、不严谨之处，减少一些怪异行为;<br>2、消除代码运行的一些不安全之处，保证代码运行的安全;<br>3、提高编译器效率，增加运行速度；<br>4、为未来新版本的Javascript做好铺垫。</p>
+</blockquote>
+<h2 id="严格模式的调用开启"><a href="#严格模式的调用开启" class="headerlink" title="严格模式的调用开启"></a>严格模式的调用开启</h2><ul>
+<li><h5 id="针对整个脚本文件的调用"><a href="#针对整个脚本文件的调用" class="headerlink" title="针对整个脚本文件的调用"></a>针对整个脚本文件的调用</h5></li>
+</ul>
+<blockquote>
+<p>在整个脚本文件最开始的地方引入，整个脚本都将以”严格模式”运行</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">　　&quot;use strict&quot;;</span><br><span class="line">　　console.log(&quot;这是严格模式。&quot;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">　　console.log(&quot;这是正常模式。&quot;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">// 第一个是严格模式，第二个则是正常模式</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h5 id="单个函数的严格模式"><a href="#单个函数的严格模式" class="headerlink" title="单个函数的严格模式"></a>单个函数的严格模式</h5></li>
+</ul>
+<blockquote>
+<p>声明在函数体的首行</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123;</span><br><span class="line">  &quot;use strict&quot;;</span><br><span class="line">  console.log(&quot;函数严格模式执行&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h5 id="脚本文件的变通写法"><a href="#脚本文件的变通写法" class="headerlink" title="脚本文件的变通写法"></a>脚本文件的变通写法</h5></li>
+</ul>
+<blockquote>
+<p>因为多个文件的合并不利于<code>严格模式</code>的声明，因此对第二种方法进行改造,将整个脚本文件放在一个立即执行的匿名函数之中。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(function ()&#123;</span><br><span class="line">　　&quot;use strict&quot;;</span><br><span class="line">　　// do someing</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<h2 id="严格模式和正常模式的区别"><a href="#严格模式和正常模式的区别" class="headerlink" title="严格模式和正常模式的区别"></a>严格模式和正常模式的区别</h2><ul>
+<li><h5 id="1、严格模式下你不能使用未声明的变量，必须先声明再使用"><a href="#1、严格模式下你不能使用未声明的变量，必须先声明再使用" class="headerlink" title="1、严格模式下你不能使用未声明的变量，必须先声明再使用"></a>1、严格模式下你不能使用未声明的变量，必须先声明再使用</h5></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;</span><br><span class="line">x = 5;// ReferenceError: x is not defined</span><br><span class="line"></span><br><span class="line">或</span><br><span class="line">&quot;use strict&quot;;</span><br><span class="line">x = &#123;a: 1&#125;;// ReferenceError: x is not defined</span><br><span class="line"></span><br><span class="line">正常模式中，如果一个变量没有声明就赋值，默认是全局变量</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="2、不能删除变量或对象"><a href="#2、不能删除变量或对象" class="headerlink" title="2、不能删除变量或对象"></a>2、不能删除变量或对象</h4></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;</span><br><span class="line">var i = 1;</span><br><span class="line">delete i;// 删除变量</span><br><span class="line">// SyntaxError: Delete of an unqualified identifier in strict mode.</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>只有configurable设置为true的对象属性，才能被删除。<br><code>configurable</code>：能否使用delete、能否需改属性特性、或能否修改访问器属性、，false为不可重新定义，默认值为true</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;</span><br><span class="line">var i = 1;</span><br><span class="line">var j = Object.create(null, &#123;</span><br><span class="line">  &quot;i&quot;: &#123;</span><br><span class="line">    value: 1,</span><br><span class="line">    configurable: true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">console.log(delete j.i);// true</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h5 id="3、禁止使用with语句"><a href="#3、禁止使用with语句" class="headerlink" title="3、禁止使用with语句"></a>3、禁止使用with语句</h5></li>
+</ul>
+<blockquote>
+<p>Javascript语言的一个特点，就是允许”<code>动态绑定</code>“，即某些属性和方法到底属于哪一个对象，不是在编译时确定的，而是在运行时（runtime）确定的。<br><code>严格模式</code>对动态绑定做了一些限制。某些情况下，只允许<code>静态绑定</code>。也就是说，属性和方法到底归属哪个对象，在编译阶段就确定。这样做有利于编译效率的提高，也使得代码更容易阅读，更少出现意外。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;</span><br><span class="line">var i = 1;</span><br><span class="line">with(0) &#123; i = 2;&#125;</span><br><span class="line">SyntaxError: Strict mode code may not include a with statement</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>with语句：由于大量使用with语句会导致性能下降，也会给调试代码造成困难，因此不建议使用with语句。<br>with语句所引起的问题是块内的任何名称可以映射(map)到with传进来的对象的属性, 也可以映射到包围这个块的作用域内的变量(甚至是全局变量), 这一切都是在运行时决定的: 在代码运行之前是无法得知的. 严格模式下, 使用 with 会引起语法错误, 所以就不会存在 with 块内的变量在运行是才决定引用到哪里的情况了</p>
+</blockquote>
+<ul>
+<li><h5 id="创设eval作用域"><a href="#创设eval作用域" class="headerlink" title="创设eval作用域"></a>创设eval作用域</h5></li>
+</ul>
+<blockquote>
+<p>正常模式下，Javascript语言有两种变量作用域（scope）：全局作用域和函数作用域。严格模式创设了第三种作用域：eval作用域。<br>正常模式下，eval语句的作用域，取决于它处于全局作用域，还是处于函数作用域。严格模式下，eval语句本身就是一个作用域，不再能够生成全局变量了，它所生成的变量只能用于eval内部。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 严格模式</span><br><span class="line">&quot;use strict&quot;;</span><br><span class="line">var i = 1;</span><br><span class="line">var j = eval(&quot;var i = 5; i&quot;);</span><br><span class="line">console.log(i, j);// 1  5</span><br><span class="line"></span><br><span class="line"># 正常模式</span><br><span class="line">var i = 1;</span><br><span class="line">var j = eval(&quot;var i = 5; i&quot;);</span><br><span class="line">console.log(i, j);// 5  5</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li><h5 id="4、禁止this关键字指向全局对象"><a href="#4、禁止this关键字指向全局对象" class="headerlink" title="4、禁止this关键字指向全局对象"></a>4、禁止this关键字指向全局对象</h5></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 正常模式</span><br><span class="line">function foo() &#123;</span><br><span class="line">  return !this;</span><br><span class="line">&#125;</span><br><span class="line">console.log(foo());// false  此时this指向全局对象</span><br><span class="line"></span><br><span class="line"># 严格模式</span><br><span class="line">function foo() &#123;</span><br><span class="line">  &quot;use strict&quot;</span><br><span class="line">  return !this;</span><br><span class="line">&#125;</span><br><span class="line">console.log(foo());// true  此时this的值为undefined</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h5 id="5、禁止在函数内部遍历调用栈"><a href="#5、禁止在函数内部遍历调用栈" class="headerlink" title="5、禁止在函数内部遍历调用栈"></a>5、禁止在函数内部遍历调用栈</h5></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123;</span><br><span class="line">  &quot;use strict&quot;</span><br><span class="line">  foo.caller;</span><br><span class="line">  foo.arguments;//</span><br><span class="line">&#125;</span><br><span class="line">console.log(foo());</span><br><span class="line">// TypeError: &apos;caller&apos; and &apos;arguments&apos; are restricted function properties and cannot be accessed in this context.</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h5 id="6、不允许对只读属性赋值"><a href="#6、不允许对只读属性赋值" class="headerlink" title="6、不允许对只读属性赋值"></a>6、不允许对只读属性赋值</h5></li>
+</ul>
+<blockquote>
+<p><code>writable</code>：对象属性是否可修改,flase为不可修改，默认值为true</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;</span><br><span class="line">var obj = &#123;&#125;;</span><br><span class="line">Object.defineProperty(obj, &quot;x&quot;, &#123;</span><br><span class="line">  value: 0,</span><br><span class="line">  writable: false</span><br><span class="line">&#125;);</span><br><span class="line">obj.x = 3;</span><br><span class="line">// TypeError: Cannot assign to read only property &apos;x&apos; of object &apos;#&lt;Object&gt;&apos;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="7、不允许删除一个不允许删除的属性"><a href="#7、不允许删除一个不允许删除的属性" class="headerlink" title="7、不允许删除一个不允许删除的属性"></a>7、不允许删除一个不允许删除的属性</h4></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;</span><br><span class="line">delete Object.prototype; // 报错</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="8、不允许变量重名"><a href="#8、不允许变量重名" class="headerlink" title="8、不允许变量重名"></a>8、不允许变量重名</h4></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;</span><br><span class="line">function foo(p, p) &#123;</span><br><span class="line">  console.log(&quot;不允许变量重名&quot;)</span><br><span class="line">&#125;</span><br><span class="line">foo(1, 2);</span><br><span class="line">// SyntaxError: Duplicate parameter name not allowed in this context</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="9、禁止八进制表示法"><a href="#9、禁止八进制表示法" class="headerlink" title="9、禁止八进制表示法"></a>9、禁止八进制表示法</h4></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;</span><br><span class="line">var i = 0100;</span><br><span class="line">// SyntaxError: Octal literals are not allowed in strict mode.</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="10、不允许使用转义字符"><a href="#10、不允许使用转义字符" class="headerlink" title="10、不允许使用转义字符"></a>10、不允许使用转义字符</h4></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;</span><br><span class="line">var x = \010;</span><br><span class="line">// SyntaxError: Invalid or unexpected token</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="11、不允许对arguments赋值"><a href="#11、不允许对arguments赋值" class="headerlink" title="11、不允许对arguments赋值"></a>11、不允许对arguments赋值</h4></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;</span><br><span class="line">arguments++; // 语法错误</span><br><span class="line">var obj = &#123;set p(arguments) &#123;&#125;&#125;; // 语法错误</span><br><span class="line">try &#123;&#125; catch (arguments) &#123;&#125; // 语法错误</span><br><span class="line">function arguments() &#123;&#125; // 语法错误</span><br><span class="line">var f = new Function(&quot;arguments&quot;, &quot;&apos;use strict&apos;; return 17;&quot;); // 语法错误</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="12、arguments不再追踪参数的变化"><a href="#12、arguments不再追踪参数的变化" class="headerlink" title="12、arguments不再追踪参数的变化"></a>12、arguments不再追踪参数的变化</h4></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;</span><br><span class="line">function foo(a) &#123;</span><br><span class="line">  a = 2;</span><br><span class="line">  console.log(a, arguments[0]);</span><br><span class="line">&#125;</span><br><span class="line">foo(1);//2  1  如果是正常模式，则结果是2  2</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="13、禁止使用arguments-callee"><a href="#13、禁止使用arguments-callee" class="headerlink" title="13、禁止使用arguments.callee"></a>13、禁止使用arguments.callee</h4></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 无法在匿名函数内部调用自身了</span><br><span class="line">&quot;use strict&quot;;　　</span><br><span class="line">var f = function() &#123;</span><br><span class="line">  return arguments.callee;</span><br><span class="line">&#125;;　　</span><br><span class="line">f();// TypeError: &apos;caller&apos;, &apos;callee&apos;, and &apos;arguments&apos; properties may not be accessed on strict mode functions or the arguments objects for calls to them</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="14、保留关键字"><a href="#14、保留关键字" class="headerlink" title="14、保留关键字"></a>14、保留关键字</h4></li>
+</ul>
+<blockquote>
+<p>为了向将来Javascript的新版本过渡，严格模式新增了一些保留字，禁止用关键字声明变量:<br>implements<br>interface<br>let<br>package<br>private<br>protected<br>public<br>static<br>yield<br>ECMAscript第五版本身还规定了另一些保留字（class, enum, export, extends, import, super），以及各大浏览器自行增加的const保留字，也是不能作为变量名的</p>
+</blockquote>
+<h2 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h2><blockquote>
+<p>主流浏览器现在实现了严格模式。但是不要盲目的依赖它，因为市场上仍然有大量的浏览器版本只部分支持严格模式或者根本就不支持（比如IE10之前的版本）。严格模式改变了语义。依赖这些改变可能会导致没有实现严格模式的浏览器中出现问题或者错误。谨慎地使用严格模式，通过检测相关代码的功能保证严格模式不出问题。最后，记得在支持或者不支持严格模式的浏览器中测试你的代码。如果你只在不支持严格模式的浏览器中测试，那么在支持的浏览器中就很有可能出问题，反之亦然。</p>
+</blockquote>
+<p>引用参考文章：<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode" target="_blank" rel="noopener">严格模式-MDN</a><br><a href="http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html" target="_blank" rel="noopener">严格模式-阮一峰</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
+          
+            <a href="/tags/javascript高级设计程序/" rel="tag"><i class="fa fa-tag"></i> javascript高级设计程序</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/16/es6/es6-4/" rel="next" title="《ES6标准入门》读记之数组的扩展">
+                <i class="fa fa-chevron-left"></i> 《ES6标准入门》读记之数组的扩展
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/20/jsh/jsh1-2/" rel="prev" title="红皮书读记-基本概念">
+                红皮书读记-基本概念 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    
+    <a href="#" class="bds_sqq fa fa-qq" data-cmd="sqq" title="分享到QQ好友"></a>
+    
+    <a href="#" class="bds_weixin fa fa-wechat" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_twi fa fa-twitter" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook fa fa-facebook" data-cmd="fbook" title="分享到Facebook"></a>
+    
+    
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "24",
+        "bdStyle": "0"
+      },
+      /*"image": {
+        "viewList": ["tsina", "sqq", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "24"
+      }*/
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style type="text/css">
+  .bdsharebuttonbox{position: fixed;width: 50px;left:20px;top:50%;margin-top:-100px;}
+  .bdsharebuttonbox a{background: none;text-align: center;font-size: 24px;padding:2px 10px;}
+  .bdsharebuttonbox a:hover{color: #4285f4;}
+</style>
+
+
+
+
+
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+ 
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDg0MC8xMTM3Nw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+         
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/logo.jpg"
+                alt="nieyafei" />
+            
+              <p class="site-author-name" itemprop="name">nieyafei</p>
+              <p class="site-description motion-element" itemprop="description">我是前端路上的蜗牛，欢迎来交流</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nieyafei" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/codehtml" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://blog.csdn.net/nyflxp" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-codiepie"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://coding.net/u/nyflxp" target="_blank" title="coding">
+                      
+                        <i class="fa fa-fw fa-code"></i>coding</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://juejin.im/user/58c288ce1b69e6006bcd4a7e" target="_blank" title="掘金">
+                      
+                        <i class="fa fa-fw fa-simplybuilt"></i>掘金</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/8c60a5aa1adc" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-heartbeat"></i>简书</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://segmentfault.com/u/nyflxp" target="_blank" title="segmentfault">
+                      
+                        <i class="fa fa-fw fa-scribd"></i>segmentfault</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:327675933@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#严格模式-use-strict"><span class="nav-number">1.</span> <span class="nav-text">严格模式(use strict)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#严格模式的好处"><span class="nav-number">1.1.</span> <span class="nav-text">严格模式的好处</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#严格模式的调用开启"><span class="nav-number">1.2.</span> <span class="nav-text">严格模式的调用开启</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#针对整个脚本文件的调用"><span class="nav-number">1.2.0.0.1.</span> <span class="nav-text">针对整个脚本文件的调用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#单个函数的严格模式"><span class="nav-number">1.2.0.0.2.</span> <span class="nav-text">单个函数的严格模式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#脚本文件的变通写法"><span class="nav-number">1.2.0.0.3.</span> <span class="nav-text">脚本文件的变通写法</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#严格模式和正常模式的区别"><span class="nav-number">1.3.</span> <span class="nav-text">严格模式和正常模式的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、严格模式下你不能使用未声明的变量，必须先声明再使用"><span class="nav-number">1.3.0.0.1.</span> <span class="nav-text">1、严格模式下你不能使用未声明的变量，必须先声明再使用</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、不能删除变量或对象"><span class="nav-number">1.3.0.1.</span> <span class="nav-text">2、不能删除变量或对象</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3、禁止使用with语句"><span class="nav-number">1.3.0.1.1.</span> <span class="nav-text">3、禁止使用with语句</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创设eval作用域"><span class="nav-number">1.3.0.1.2.</span> <span class="nav-text">创设eval作用域</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、禁止this关键字指向全局对象"><span class="nav-number">1.3.0.1.3.</span> <span class="nav-text">4、禁止this关键字指向全局对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5、禁止在函数内部遍历调用栈"><span class="nav-number">1.3.0.1.4.</span> <span class="nav-text">5、禁止在函数内部遍历调用栈</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6、不允许对只读属性赋值"><span class="nav-number">1.3.0.1.5.</span> <span class="nav-text">6、不允许对只读属性赋值</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、不允许删除一个不允许删除的属性"><span class="nav-number">1.3.0.2.</span> <span class="nav-text">7、不允许删除一个不允许删除的属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8、不允许变量重名"><span class="nav-number">1.3.0.3.</span> <span class="nav-text">8、不允许变量重名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9、禁止八进制表示法"><span class="nav-number">1.3.0.4.</span> <span class="nav-text">9、禁止八进制表示法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10、不允许使用转义字符"><span class="nav-number">1.3.0.5.</span> <span class="nav-text">10、不允许使用转义字符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11、不允许对arguments赋值"><span class="nav-number">1.3.0.6.</span> <span class="nav-text">11、不允许对arguments赋值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12、arguments不再追踪参数的变化"><span class="nav-number">1.3.0.7.</span> <span class="nav-text">12、arguments不再追踪参数的变化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13、禁止使用arguments-callee"><span class="nav-number">1.3.0.8.</span> <span class="nav-text">13、禁止使用arguments.callee</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14、保留关键字"><span class="nav-number">1.3.0.9.</span> <span class="nav-text">14、保留关键字</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#备注："><span class="nav-number">1.4.</span> <span class="nav-text">备注：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+ 
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">nieyafei</span>
+
+  
+</div>
+
+
+<p class="host-coding">Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<style type="text/css">
+  .posts-expand .post-title{margin-top: 0 !important;}
+  .host-coding{float: right;color: #ccc;}
+  .host-coding a{color: #ccc;}
+</style>
+ 
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      人次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+ 
+      </div>
+    </footer>
+
+    
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i> 
+    </div>
+     
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+
+<script src="https://cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
+ 
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+ 
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/baiduTemplate.js?v=5.1.4"></script>
+
+ 
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+ 
+ 
+ 
+  
+ 
+ 
+ 
+
+</body>
+
+</html>
