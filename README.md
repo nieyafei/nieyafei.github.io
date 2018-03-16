@@ -5,7 +5,7 @@
 我是一名前端路上的蜗牛程序猿，这是我的Blog,我会一直在路上,大家共勉
 主要分享一下前端技术知识，希望和大家一起交流和进步，有不对的地方，欢迎大家指出批评
 
-<div style="text-align: center;"><img src="http://codehtml.cn/images/css/2.png" /></div>
+<div style="text-align: center;"><img src="http://codehtml.cn/images/code.png" /></div>
 
 ### 博客内容分类：
 

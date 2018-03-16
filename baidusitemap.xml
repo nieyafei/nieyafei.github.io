@@ -491,34 +491,12 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-2/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-语句</title>
-        <pubTime>2017-09-20T15:22:46.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>javascript高级设计程序</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-3/</loc>
-    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
-    <data>
-        <display>
-        <title>红皮书读记-基本数据类型</title>
-        <pubTime>2017-09-20T15:22:20.000Z</pubTime>
+        <title>红皮书读记-基本概念</title>
+        <pubTime>2017-09-20T15:22:13.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -557,12 +535,34 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-2/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-3/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-基本概念</title>
-        <pubTime>2017-09-20T15:22:13.000Z</pubTime>
+        <title>红皮书读记-基本数据类型</title>
+        <pubTime>2017-09-20T15:22:20.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>javascript高级设计程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
+    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
+    <data>
+        <display>
+        <title>红皮书读记-语句</title>
+        <pubTime>2017-09-20T15:22:46.000Z</pubTime>
         
         <tag>javascript</tag>
          
