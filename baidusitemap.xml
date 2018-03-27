@@ -3,6 +3,53 @@
 
 
     
+  <url>
+    <loc>http://codehtml.cn/2018/03/27/js/js-ms-1/</loc>
+    <lastmod>2018-03-27T13:23:55.238Z</lastmod>
+    <data>
+        <display>
+        <title>setTimeout面试连击</title>
+        <pubTime>2018-03-27T12:56:12.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>面试</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
+    <loc>http://codehtml.cn/2018/03/23/css/css3-box-reflect/</loc>
+    <lastmod>2018-03-23T12:43:08.037Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3之box-reflect制作倒影</title>
+        <pubTime>2018-03-23T08:10:07.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>CSS3</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS3" url="http://codehtml.cn/categories/CSS3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
     
     
   <url>
@@ -269,7 +316,6 @@
     
     
     
-    
   <url>
     <loc>http://codehtml.cn/2018/01/22/html/html-dialog/</loc>
     <lastmod>2018-03-13T12:42:18.678Z</lastmod>
@@ -491,28 +537,6 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-2/</loc>
-    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
-    <data>
-        <display>
-        <title>红皮书读记-基本概念</title>
-        <pubTime>2017-09-20T15:22:13.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>javascript高级设计程序</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-4/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
@@ -541,6 +565,28 @@
         <display>
         <title>红皮书读记-基本数据类型</title>
         <pubTime>2017-09-20T15:22:20.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>javascript高级设计程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-2/</loc>
+    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
+    <data>
+        <display>
+        <title>红皮书读记-基本概念</title>
+        <pubTime>2017-09-20T15:22:13.000Z</pubTime>
         
         <tag>javascript</tag>
          
