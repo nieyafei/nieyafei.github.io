@@ -1083,21 +1083,31 @@ pre .javascript .function {
 .comments {
   margin: 60px 20px 0;
 }
-.archive .posts-collapse .post {
+.archive .posts-collapse .post,
+.tag-reset .posts-collapse .post,
+.category .posts-collapse .post {
   padding: 0;
   box-shadow: none;
   -webkit-box-shadow: none;
 }
-.archive .posts-collapse .collection-title {
+.archive .posts-collapse .collection-title,
+.tag-reset .posts-collapse .collection-title,
+.category .posts-collapse .collection-title {
   margin: 30px 0;
 }
-.archive .posts-collapse .post-header:hover {
+.archive .posts-collapse .post-header:hover,
+.tag-reset .posts-collapse .post-header:hover,
+.category .posts-collapse .post-header:hover {
   border-bottom-color: #4285f4;
 }
-.archive .posts-collapse .post-header:hover * {
+.archive .posts-collapse .post-header:hover *,
+.tag-reset .posts-collapse .post-header:hover *,
+.category .posts-collapse .post-header:hover * {
   color: #4285f4 !important;
 }
-.archive .posts-collapse .post-header:hover::before {
+.archive .posts-collapse .post-header:hover::before,
+.tag-reset .posts-collapse .post-header:hover::before,
+.category .posts-collapse .post-header:hover::before {
   background: #4285f4;
 }
 .tag-cloud {
@@ -1873,7 +1883,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #58ff86;
+  background: #6a4dff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2024,6 +2034,10 @@ pre .javascript .function {
 }
 .cc-license img {
   display: inline-block;
+}
+.posts-expand .post-body img {
+  padding: 0;
+  border: 0;
 }
 .theme-next #ds-thread #ds-reset {
   color: #555;
@@ -2412,6 +2426,29 @@ pre .javascript .function {
 .site-uv::after {
   content: "|";
   padding-left: 10px;
+}
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: none;
+}
+.gt-container .gt-popup .gt-action.is--active:before {
+  top: 0.7em;
+}
+.gt-container .gt-header-controls-tip,
+.gt-container .gt-comment-username,
+.gt-container a {
+  color: #ff6347 !important;
+}
+.gt-container .gt-svg svg {
+  fill: #ff6347 !important;
+}
+.gt-container .gt-link {
+  border-bottom-color: #ff6347 !important;
+}
+.gt-container .gt-btn,
+.gt-container .gt-popup .gt-action.is--active:before {
+  background-color: #ff6347 !important;
 }
 .page-archive .archive-page-counter {
   position: relative;
