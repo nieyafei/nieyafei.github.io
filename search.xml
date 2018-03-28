@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[谜题：parseInt碰到map]]></title>
+    <url>%2F2018%2F03%2F28%2Fjs%2Fpuzzlers%2Fjs-mt-1%2F</url>
+    <content type="text"><![CDATA[1["1", "2", "3"].map(parseInt) 输出打印结果 结果：[1, NaN, NaN] 解析： map ?&gt; callback(currentValue, index, array) currentValue: 数组中正在处理的当前元素 index: 数组中正在处理的当前元素的索引 array: map 方法被调用的数组 parseInt ?&gt; 语法：parseInt(string, radix) string解析的字符串，若不是字符串则转换为字符串 radix是一个介于2-36之间的整数，表示字符串的基数,当未指定基数时或者基数为0，不同的实现会产生不同的结果，通常将值默认为10 ?&gt; 如果被解析参数的第一个字符无法被转化成数值类型，则返回 NaN 此题解析之后： parseInt(&quot;1&quot;,0), 以10进制转换，返回1 parseInt(&quot;2&quot;,1), 基数非法，返回NaN parseInt(&quot;3&quot;,2), 以二进制转换，第一个参数非法，返回NaN 参考资料： map-MDN parseInt-MDN JavaScript Puzzlers!]]></content>
+      <tags>
+        <tag>javascript</tag>
+        <tag>谜题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[setTimeout面试连击]]></title>
-    <url>%2F2018%2F03%2F27%2Fjs%2Fjs-ms-1%2F</url>
+    <url>%2F2018%2F03%2F27%2Fjs%2Finterview%2Fjs-ms-1%2F</url>
     <content type="text"><![CDATA[第一击123for (var i = 0; i &lt; 5; i++) &#123; console.log(i);&#125; 答案： 0 1 2 3 4 第二击12345for (var i = 0; i &lt; 5; i++) &#123; setTimeout(function() &#123; console.log(i); &#125;, 1000 * i);&#125; 答案： 5 5 5 5 5 第三击怎么修改输出0 1 2 3 4 12345678# 闭包模式 或者Es6的`let`for (var i = 0; i &lt; 5; i++) &#123; (function(i) &#123; setTimeout(function() &#123; console.log(i); &#125;, i * 1000); &#125;)(i);&#125; 第四击1234567for (var i = 0; i &lt; 5; i++) &#123; (function() &#123; setTimeout(function() &#123; console.log(i); &#125;, i * 1000); &#125;)(i);&#125; 答案： 5 5 5 5 5 第五击123456for (var i = 0; i &lt; 5; i++) &#123; setTimeout((function(i) &#123; console.log(i); &#125;)(i), i * 1000);&#125; 答案： 0 1 2 3 4 第六击运行机制 12345678910111213setTimeout(function() &#123; console.log(1)&#125;, 0);new Promise(function executor(resolve) &#123; console.log(2); for( var i=0 ; i&lt;10000 ; i++ ) &#123; i == 9999 &amp;&amp; resolve(); &#125; console.log(3);&#125;).then(function() &#123; console.log(4);&#125;);console.log(5); setTimeout属于异步进程任务，会放到任务队列等待执行 Promise里面是立即执行函数，因此先输出2和3，then则会在当前tick的最后执行，因此会先输出5，再接着输出4，最后输出1 答案： 2 3 5 4 1 参考资料： 题目来源]]></content>
       <categories>
         <category>javascript</category>

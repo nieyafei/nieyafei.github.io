@@ -4,8 +4,27 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2018/03/27/js/js-ms-1/</loc>
-    <lastmod>2018-03-27T13:34:02.058Z</lastmod>
+    <loc>http://codehtml.cn/2018/03/28/js/puzzlers/js-mt-1/</loc>
+    <lastmod>2018-03-28T14:34:03.055Z</lastmod>
+    <data>
+        <display>
+        <title>谜题：parseInt碰到map</title>
+        <pubTime>2018-03-28T14:29:42.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>谜题</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2018/03/27/js/interview/js-ms-1/</loc>
+    <lastmod>2018-03-28T14:28:52.494Z</lastmod>
     <data>
         <display>
         <title>setTimeout面试连击</title>
@@ -537,12 +556,12 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-4/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-操作符</title>
-        <pubTime>2017-09-20T15:22:24.000Z</pubTime>
+        <title>红皮书读记-语句</title>
+        <pubTime>2017-09-20T15:22:46.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -603,12 +622,12 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-4/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-语句</title>
-        <pubTime>2017-09-20T15:22:46.000Z</pubTime>
+        <title>红皮书读记-操作符</title>
+        <pubTime>2017-09-20T15:22:24.000Z</pubTime>
         
         <tag>javascript</tag>
          
