@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>http://codehtml.cn/2018/03/29/js/puzzlers/js-mt-2/</loc>
+    <lastmod>2018-03-28T22:52:42.310Z</lastmod>
+    <data>
+        <display>
+        <title>谜题：关于null</title>
+        <pubTime>2018-03-28T22:49:41.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>谜题</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://codehtml.cn/2018/03/28/js/puzzlers/js-mt-1/</loc>
     <lastmod>2018-03-28T15:05:26.264Z</lastmod>
     <data>
@@ -556,12 +575,12 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-2/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-语句</title>
-        <pubTime>2017-09-20T15:22:46.000Z</pubTime>
+        <title>红皮书读记-基本概念</title>
+        <pubTime>2017-09-20T15:22:13.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -578,12 +597,12 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-2/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-基本概念</title>
-        <pubTime>2017-09-20T15:22:13.000Z</pubTime>
+        <title>红皮书读记-语句</title>
+        <pubTime>2017-09-20T15:22:46.000Z</pubTime>
         
         <tag>javascript</tag>
          

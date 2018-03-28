@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[谜题：关于null]]></title>
+    <url>%2F2018%2F03%2F29%2Fjs%2Fpuzzlers%2Fjs-mt-2%2F</url>
+    <content type="text"><![CDATA[1[typeof null, null instanceof Object] 输出打印结果： 结果： [“object”, false] 解析： typeof typeof操作符返回一个字符串，表示未经计算的操作数的类型 类型 结果 Undefined &quot;undefined&quot; Null &quot;object&quot; Boolean &quot;boolean&quot; Number &quot;number&quot; String &quot;string&quot; Symbol &quot;symbol&quot; 函数对象 &quot;function&quot; 任何其他对象 &quot;object&quot; 1typeof null === 'object';// 从最开始的时候javascript就是这样 JavaScript 中的值是由一个表示类型的标签和实际数据值表示的。对象的类型标签是 0。由于 null 代表的是空指针（大多数平台下值为 0x00），因此，null的类型标签也成为了 0，typeof null就错误的返回了”object”。这算一个bug,但是被拒绝修复，因为影响的web系统太多 instanceof instanceof 运算符用来测试一个对象在其原型链中是否存在一个构造函数的 prototype 属性 null不是以Object原型创建，因此返回false 参考资料： MDN：typeof MDN：instanceof JavaScript Puzzlers! 更多精彩链接]]></content>
+      <tags>
+        <tag>javascript</tag>
+        <tag>谜题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[谜题：parseInt碰到map]]></title>
     <url>%2F2018%2F03%2F28%2Fjs%2Fpuzzlers%2Fjs-mt-1%2F</url>
     <content type="text"><![CDATA[1["1", "2", "3"].map(parseInt) 输出打印结果 结果：[1, NaN, NaN] 解析： map callback(currentValue, index, array) currentValue: 数组中正在处理的当前元素 index: 数组中正在处理的当前元素的索引 array: map 方法被调用的数组 parseInt 语法：parseInt(string, radix) string解析的字符串，若不是字符串则转换为字符串 radix是一个介于2-36之间的整数，表示字符串的基数,当未指定基数时或者基数为0，不同的实现会产生不同的结果，通常将值默认为10 如果被解析参数的第一个字符无法被转化成数值类型，则返回 NaN 此题解析之后： parseInt(&quot;1&quot;,0), 以10进制转换，返回1 parseInt(&quot;2&quot;,1), 基数非法，返回NaN parseInt(&quot;3&quot;,2), 以二进制转换，第一个参数非法，返回NaN 参考资料： map-MDN parseInt-MDN JavaScript Puzzlers! 更多精彩链接]]></content>
