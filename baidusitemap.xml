@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://codehtml.cn/2017/08/23/siweidaotujs/</loc>
+    <lastmod>2018-03-28T23:20:48.882Z</lastmod>
+    <data>
+        <display>
+        <title>干货，大神的javascript思维导图，赶紧收藏吧！！</title>
+        <pubTime>2017-08-23T15:10:42.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2017/08/23/jsarray/</loc>
+    <lastmod>2018-03-28T23:20:31.948Z</lastmod>
+    <data>
+        <display>
+        <title>javascript之Array的使用</title>
+        <pubTime>2017-08-23T15:20:26.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://codehtml.cn/2018/03/29/js/puzzlers/js-mt-2/</loc>
     <lastmod>2018-03-28T22:52:42.310Z</lastmod>
     <data>
@@ -131,28 +171,6 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/08/23/jsarray/</loc>
-    <lastmod>2018-03-15T00:50:39.104Z</lastmod>
-    <data>
-        <display>
-        <title>javascript之Array的使用</title>
-        <pubTime>2017-08-23T15:20:26.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>js</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://codehtml.cn/2017/08/29/webzyyh/</loc>
     <lastmod>2018-03-15T00:50:12.536Z</lastmod>
     <data>
@@ -190,28 +208,6 @@
            
              
               <breadCrumb title="web架构" url="http://codehtml.cn/categories/web%E6%9E%B6%E6%9E%84/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://codehtml.cn/2017/08/23/siweidaotujs/</loc>
-    <lastmod>2018-03-15T00:49:56.384Z</lastmod>
-    <data>
-        <display>
-        <title>干货，大神的javascript思维导图，赶紧收藏吧！！</title>
-        <pubTime>2017-08-23T15:10:42.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>js</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
           
         </display>
     </data>
@@ -597,6 +593,28 @@
 
     
   <url>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-3/</loc>
+    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
+    <data>
+        <display>
+        <title>红皮书读记-基本数据类型</title>
+        <pubTime>2017-09-20T15:22:20.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>javascript高级设计程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
@@ -625,28 +643,6 @@
         <display>
         <title>红皮书读记-操作符</title>
         <pubTime>2017-09-20T15:22:24.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>javascript高级设计程序</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript高级设计程序" url="http://codehtml.cn/categories/javascript%E9%AB%98%E7%BA%A7%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-3/</loc>
-    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
-    <data>
-        <display>
-        <title>红皮书读记-基本数据类型</title>
-        <pubTime>2017-09-20T15:22:20.000Z</pubTime>
         
         <tag>javascript</tag>
          

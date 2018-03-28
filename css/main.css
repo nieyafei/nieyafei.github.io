@@ -1110,6 +1110,19 @@ pre .javascript .function {
 .category .posts-collapse .post-header:hover::before {
   background: #4285f4;
 }
+blockquote {
+  border-left: 4px solid #ff6347;
+  background: #f9f9f9;
+}
+ul {
+  -webkit-padding-start: 17px;
+}
+.posts-expand .post-body ul li {
+  list-style: disc !important;
+}
+code {
+  color: #ff6347;
+}
 .tag-cloud {
   text-align: center;
 }
@@ -1883,7 +1896,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0a8309;
+  background: #f0b3ff;
 }
 .links-of-blogroll {
   font-size: 13px;
