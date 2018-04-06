@@ -4,6 +4,50 @@
 
     
   <url>
+    <loc>http://codehtml.cn/2018/04/06/css/cssWorld/cw-1/</loc>
+    <lastmod>2018-04-06T12:09:44.100Z</lastmod>
+    <data>
+        <display>
+        <title>《CSS世界》之块级元素</title>
+        <pubTime>2018-04-06T11:57:40.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>《CSS世界》· 精要笔记</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://codehtml.cn/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://codehtml.cn/2018/04/03/js/google-js-guide/</loc>
+    <lastmod>2018-04-03T12:14:10.137Z</lastmod>
+    <data>
+        <display>
+        <title>谷歌JavaScript风格指南的13个值得注意的地方</title>
+        <pubTime>2018-04-03T08:28:09.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>规范</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://codehtml.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://codehtml.cn/2017/08/23/siweidaotujs/</loc>
     <lastmod>2018-03-28T23:20:48.882Z</lastmod>
     <data>
@@ -571,12 +615,12 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-2/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-3/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-基本概念</title>
-        <pubTime>2017-09-20T15:22:13.000Z</pubTime>
+        <title>红皮书读记-基本数据类型</title>
+        <pubTime>2017-09-20T15:22:20.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -593,12 +637,12 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-3/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-4/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-基本数据类型</title>
-        <pubTime>2017-09-20T15:22:20.000Z</pubTime>
+        <title>红皮书读记-操作符</title>
+        <pubTime>2017-09-20T15:22:24.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -637,12 +681,12 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-4/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-2/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-操作符</title>
-        <pubTime>2017-09-20T15:22:24.000Z</pubTime>
+        <title>红皮书读记-基本概念</title>
+        <pubTime>2017-09-20T15:22:13.000Z</pubTime>
         
         <tag>javascript</tag>
          
