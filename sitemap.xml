@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://codehtml.cn/2018/04/15/css/css-skew-image/</loc>
+    
+    <lastmod>2018-04-15T02:12:02.823Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://codehtml.cn/2018/04/10/css/css-image-rendering/</loc>
     
     <lastmod>2018-04-09T16:37:35.813Z</lastmod>
@@ -65,14 +72,14 @@
   </url>
   
   <url>
-    <loc>http://codehtml.cn/about/index.html</loc>
+    <loc>http://codehtml.cn/pass.travis.json</loc>
     
     <lastmod>2018-03-27T12:47:13.942Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://codehtml.cn/pass.travis.json</loc>
+    <loc>http://codehtml.cn/about/index.html</loc>
     
     <lastmod>2018-03-27T12:47:13.942Z</lastmod>
     
@@ -275,14 +282,7 @@
   </url>
   
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
-    
-    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-4/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-3/</loc>
     
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     
@@ -296,7 +296,14 @@
   </url>
   
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-3/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-4/</loc>
+    
+    <lastmod>2018-02-04T09:02:13.441Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
     
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     
