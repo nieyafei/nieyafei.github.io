@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[mix-blend-mode的使用]]></title>
+    <url>%2F2018%2F05%2F06%2Fcss%2Fmix-blend-mode%2F</url>
+    <content type="text"><![CDATA[在线编辑demo 属性描述了元素的内容应该与元素的直系父元素的内容和元素的背景如何混合。 mix-blend-mode: normal; //正常 mix-blend-mode: multiply; //正片叠底 mix-blend-mode: screen; //滤色 mix-blend-mode: overlay; //叠加 mix-blend-mode: darken; //变暗 mix-blend-mode: lighten; //变亮 mix-blend-mode: color-dodge; //颜色减淡 mix-blend-mode: color-burn; //颜色加深 mix-blend-mode: hard-light; //强光 mix-blend-mode: soft-light; //柔光 mix-blend-mode: difference; //差值 mix-blend-mode: exclusion; //排除 mix-blend-mode: hue; //色相 mix-blend-mode: saturation; //饱和度 mix-blend-mode: color; //颜色 mix-blend-mode: luminosity; //亮度 mix-blend-mode: initial; //初始 mix-blend-mode: inherit; //继承 mix-blend-mode: unset; //复原 在线编辑demo 参考资料： MDN: mix-blend-mode]]></content>
+      <categories>
+        <category>CSS3</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>CSS3</tag>
+        <tag>DEMO</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CSS3之图片列表展示特效]]></title>
     <url>%2F2018%2F04%2F15%2Fcss%2Fcss-skew-image%2F</url>
     <content type="text"><![CDATA[在线demo 在线编辑demo grid、transform 、transition CSS代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465.main-cons&#123; background: #F7F5F2; padding:100px 0; &#125; .container&#123; width: 80%; margin: 0 auto; display: grid; grid-template-columns: auto auto auto; grid-gap: 60px; &#125; .container .item&#123; position: relative; transform: skew(-10deg); transition: all 0.25s; &#125; .container .item .card&#123; height: 200px; background: #808080; border-radius: 40px; overflow: hidden; position: relative; transition: all 0.25s; &#125; .container .item::before&#123; content: ""; position: absolute; left: 0; top: 0; z-index: -1; width: calc(100% - 10px); height: calc(100% - 10px); border-radius: 40px; opacity: 0; border: 2px solid #373f51; transition: all 0.5s 0.05s; &#125; .container .item .card::after&#123; content: " "; display: block; position: absolute; left: 0; top: 0; background: url("http://img.hb.aicdn.com/3f8e4597fdfba9da223f56301bc59a22692d972b112463-N0jS1j_fw658") no-repeat; background-size:cover; background-blend-mode: screen; width: 100%; height: 100%; z-index: 2; transform: skew(10deg) scale(1.2); transition:all 0.2s; background-color: #373f51; &#125; .container .item:hover::before&#123; transform: translate(10px,10px); opacity: 1; &#125; .container .item:hover .card::after&#123; background-blend-mode: normal; &#125; .container .item:hover .card&#123; transform: translate(-10px,-10px); &#125; HTML代码12345678910111213141516171819202122232425262728293031323334353637383940&lt;div class="main-cons"&gt; &lt;div class="container"&gt; &lt;div class="item"&gt; &lt;div class="card"&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="item"&gt; &lt;div class="card"&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="item"&gt; &lt;div class="card"&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="item"&gt; &lt;div class="card"&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="item"&gt; &lt;div class="card"&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="item"&gt; &lt;div class="card"&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="item"&gt; &lt;div class="card"&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="item"&gt; &lt;div class="card"&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="item"&gt; &lt;div class="card"&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt; 在线demo 在线编辑demo]]></content>
