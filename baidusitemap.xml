@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>http://codehtml.cn/2018/05/06/css/mix-blend-mode/</loc>
     <lastmod>2018-05-06T13:51:58.167Z</lastmod>
@@ -238,7 +239,6 @@
     </data>
     </url>
 
-    
     
     
   <url>
@@ -707,12 +707,12 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-3/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-4/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-基本数据类型</title>
-        <pubTime>2017-09-20T15:22:20.000Z</pubTime>
+        <title>红皮书读记-操作符</title>
+        <pubTime>2017-09-20T15:22:24.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -751,12 +751,12 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-4/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-操作符</title>
-        <pubTime>2017-09-20T15:22:24.000Z</pubTime>
+        <title>红皮书读记-语句</title>
+        <pubTime>2017-09-20T15:22:46.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -773,12 +773,12 @@
 
     
   <url>
-    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-5/</loc>
+    <loc>http://codehtml.cn/2017/09/20/jsh/jsh1-3/</loc>
     <lastmod>2018-02-04T09:02:13.441Z</lastmod>
     <data>
         <display>
-        <title>红皮书读记-语句</title>
-        <pubTime>2017-09-20T15:22:46.000Z</pubTime>
+        <title>红皮书读记-基本数据类型</title>
+        <pubTime>2017-09-20T15:22:20.000Z</pubTime>
         
         <tag>javascript</tag>
          
